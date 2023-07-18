@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "623939033941",
+    "project_id": "justagram-24961",
+    "storage_bucket": "justagram-24961.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623939033941:android:1a0a395c3d919f7774addc",
+        "android_client_info": {
+          "package_name": "com.JuseungL.justagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623939033941-e1tc1kt3n1pqk1fnas19mg1cok8okdnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuIXsVC9KB1cZbody4gxVIc4nQdaSLGlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623939033941-e1tc1kt3n1pqk1fnas19mg1cok8okdnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
