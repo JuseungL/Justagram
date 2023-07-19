@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- RelativeLayout은 자식 뷰들의 상대적인 위치를 정의할 수 있는 레이아웃입니다. -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <!-- 이미지 뷰, 로고 이미지를 표시합니다. -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,6 +14,7 @@
         android:layout_alignParentTop="true"
         android:src="@drawable/logo_title" />
 
+    <!-- LinearLayout, 이 안에 들어가는 뷰들을 세로 방향으로 배치합니다. -->
     <LinearLayout
         android:id="@+id/signing_layout"
         android:layout_width="match_parent"
@@ -19,12 +22,14 @@
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
 
+        <!-- TextInputLayout, 사용자에게 텍스트 입력을 받기 위한 뷰로, 이메일 입력을 위한 EditText를 포함합니다. -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp">
 
+            <!-- EditText, 사용자로부터 이메일 입력을 받습니다. -->
             <EditText
                 android:id="@+id/email_edittext"
                 android:layout_width="match_parent"
@@ -32,12 +37,14 @@
                 android:hint="@string/email" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- TextInputLayout, 사용자에게 텍스트 입력을 받기 위한 뷰로, 비밀번호 입력을 위한 EditText를 포함합니다. -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp">
 
+            <!-- EditText, 사용자로부터 비밀번호 입력을 받습니다. -->
             <EditText
                 android:inputType="textPassword"
                 android:id="@+id/password_edittext"
@@ -46,7 +53,7 @@
                 android:hint="@string/password" />
         </com.google.android.material.textfield.TextInputLayout>
 
-
+        <!-- AppCompatButton, 이메일을 사용한 로그인 버튼입니다. -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/email_login_button"
             android:layout_width="match_parent"
@@ -58,6 +65,7 @@
             android:text="@string/signin_email"
             android:theme="@style/ButtonStyle" />
 
+        <!-- AppCompatButton, 페이스북을 사용한 로그인 버튼입니다. -->
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -68,7 +76,9 @@
             android:text="@string/signin_facebook"
             android:textColor="@color/colorWhite" />
 
+        <!-- AppCompatButton, 구글을 사용한 로그인 버튼입니다. -->
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/google_sign_in_button"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginLeft="20dp"

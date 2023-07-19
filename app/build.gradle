@@ -46,6 +46,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
     implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
+    implementation 'com.google.android.gms:play-services-auth:20.6.0'
 
     // implementation 'com.android.support:design:27.0.0' // 주석 처리
     testImplementation 'junit:junit:4.13.2'
